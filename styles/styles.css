@@ -8,8 +8,8 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: #0070c9;
-  --color-tertiary: #FFFFFF;
-  --color-white: #FFFFFF;
+  --color-tertiary: #ffffff;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -19,14 +19,14 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .light-mode {
-  --color-primary: #FFFFFF;
+  --color-primary: #ffffff;
   --color-secondary: #5271ff;
   --color-tertiary: #454e56;
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #6c7983;
@@ -37,6 +37,26 @@
   --color-grey-6: #12181b;
 }
 
+.mobileHide {
+  display: inline;
+}
+
+/* Smartphone Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .mobileHide {
+    display: none;
+  }
+}
+.mobileShow {
+  display: none;
+}
+
+/* Smartphone Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .mobileShow {
+    display: inline;
+  }
+}
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
